@@ -198,21 +198,113 @@ body {
   font-size: 18px;
   border-radius: 6px;
 }
-
+/* =======================
+   TABLET
+======================= */
 @media (max-width: 991px) {
+
   .Contact {
-    padding: 50px;
+    padding: 40px 40px;
   }
 
   .container {
     flex-direction: column;
+    gap: 40px;
   }
 
-  .container .contactinfo {
-    margin-bottom: 40px;
+  .contactform {
+    width: 80%;
   }
 
-  .container .contactinfo {
-    width: 100%;
+  .image-box {
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle {
+    width: 340px;
+    height: 340px;
+    top: -20px;
+    left: -20px;
   }
 }
+
+
+/* =======================
+   MOBILE
+======================= */
+@media (max-width: 768px) {
+
+  body {
+    overflow-y: auto;
+  }
+
+  .Contact {
+    padding: 30px 20px;
+  }
+
+  .Contact .content h2,
+  .Contact .content p {
+    font-size: 24px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contactinfo .box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactinfo .box .text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .contactform {
+    width: 100%;
+  }
+
+  .image-box {
+    width: 240px;
+    height: 240px;
+  }
+
+  .circle {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+
+/* =======================
+   SMALL MOBILE
+======================= */
+@media (max-width: 480px) {
+
+  .Contact .content h2 {
+    font-size: 20px;
+  }
+
+  .Contact .content p {
+    font-size: 18px;
+  }
+
+  .contactform h2 {
+    font-size: 22px;
+  }
+
+  .image-box {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circle {
+    width: 240px;
+    height: 240px;
+  }
+}
+
